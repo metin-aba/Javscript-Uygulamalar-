@@ -20,8 +20,8 @@ const changeFoodPosition = () => {
 };
 const handleGameOver = () => {
     clearInterval(setIntervalId);
-    alert("oyun bitti yeniden başlamak için OK'a basın...");
-    location.reload();
+    swal("Game Over!", "devam etmek için bas..", "error");
+    
 }
 const changeDirection = (e) => {
   if (e.key === "ArrowUp" && velocityY !=1) {
