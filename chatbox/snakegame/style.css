@@ -6,3 +6,34 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #E3F2FD;
+}
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction:column;
+    border-radius: 5px;
+    background-color: #293447;
+}
+.game-details {
+    color: #dbd7d7;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(30,1fr) / repeat(30,1fr);
+    background-color: #212837;
+}
