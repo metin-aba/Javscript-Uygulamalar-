@@ -63,6 +63,10 @@ form .form-control {
     border-radius: 4px;
     padding: 0 20px;
 }
+.form-control input:is(:focus,:valid) {
+    padding: 16px 20px 0;
+    background:#444;
+}
 .form-control label {
     position: absolute;
     left: 20px;
@@ -75,4 +79,72 @@ form .form-control {
 .form-control input:is(:focus,:valid) ~ label {
     font-size: 0.75rem;
     transform: translateY(-130%);
+}
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    background: #e50914;
+    margin: 25px 0 10px;
+    transition: 0.1s ease;
+}
+form button:hover {
+    background: #c40812;
+}
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+form .remember-me {
+    display: flex;
+}
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+form .form-help :where(label, a) {
+    font-size: 0.9rem;
+}
+.form-wrapper :where(label,p,small,a) {
+    color: #b3b3b3;
+}
+.form-wrapper p a {
+    color: #fff;
+}
+.form-wrapper small {
+    margin-top: 15px;
+    display: block;
+}
+.form-wrapper small a {
+    color: #0071eb;
+}
+.form-wrapper a {
+    text-decoration: none;
+}
+.form-wrapper a:hover{
+    text-decoration: underline;
+}
+@media (max-width:740px) {
+    body::before{
+        display: none;
+    }
+    nav,.form-wrapper {
+        padding: 20px;
+    }
+    nav a img {
+        width: 140px;
+    }
+    .form-wrapper {
+        top: 43%;
+        width: 100%;
+    }
+    .form-wrapper form {
+        margin: 25px 0 40px;
+    }
 }
