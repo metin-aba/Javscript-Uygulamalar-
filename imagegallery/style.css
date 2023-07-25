@@ -19,6 +19,7 @@ body {
 }
 .filter_buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -38,13 +39,20 @@ button.active {
 .filterable_cards {
     display: flex;
     margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
 
 }
 .card {
     flex-basis: 300px;
+    flex-grow: 1;
     background-color: #fff;
     padding: 3px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.card.hide {
+    display: none;
 }
 .card img {
     width: 100%;
