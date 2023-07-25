@@ -130,7 +130,7 @@ form .form-help :where(label, a) {
 .form-wrapper a:hover{
     text-decoration: underline;
 }
-@media (max-width:740px) {
+@media (max-width:600px) {
     body::before{
         display: none;
     }
